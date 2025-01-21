@@ -6,12 +6,12 @@ import { AuthModule } from "./auth/auth.module";
 import * as process from "node:process";
 
 @Module({
-	imports: [
-		ConfigModule.forRoot(),
-		MongooseModule.forRoot(<string>process.env.MONGO_URI),
-		AuthModule,
-	],
-	controllers: [],
-	providers: [],
+  imports: [
+    ConfigModule.forRoot(),
+    MongooseModule.forRoot(<string>process.env.MONGO_URI),
+    AuthModule,
+  ],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
